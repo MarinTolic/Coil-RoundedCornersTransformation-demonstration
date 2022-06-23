@@ -9,7 +9,7 @@ import coil.transform.RoundedCornersTransformation
 
 class MainActivity : AppCompatActivity() {
 
-    private var shouldApplyTransformation = true
+    private var shouldApplyTransformation = false
     private val image =
         "https://images.unsplash.com/photo-1655836605189-7b151b60af15?crop=faces%2Cedges&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU1OTY5ODM0&ixlib=rb-1.2.1&q=60&w=1200&auto=format&h=630&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-mode=normal&blend-alpha=10&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=000000"
 
