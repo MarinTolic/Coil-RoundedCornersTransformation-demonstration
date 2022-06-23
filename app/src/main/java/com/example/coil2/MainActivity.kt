@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         loadImage()
     }
 
+    /**
+     * Regulates if [RoundedCornersTransformation] is applied
+     * when loading the image into the ImageView.
+     */
     private fun setupCheckbox() {
         with(findViewById<CheckBox>(R.id.checkbox)) {
             this.isChecked = shouldApplyTransformation
@@ -31,6 +35,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * If the image is loaded with the transformation
+     * and the target [ImageView] witdh = match_parent
+     * and height = wrap_content the image will not
+     * be displayed.
+     */
     private fun loadImage() {
         findViewById<ImageView>(R.id.imageView)
             .load(image) {
